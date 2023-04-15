@@ -19,64 +19,30 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-secondary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">TP5 ADP</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 py-3">
+            <div class="container-fluid px-2">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTP5"
+                    aria-controls="navbarTP5" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse" id="navbarTP5">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="true">
-                                Ejercicios
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="http://127.0.0.1:5501/index.html">Ejercicio 1</a>
-                                </li>
-                                <hr class="dropdown-divider" />
-                                <li><a class="dropdown-item" href="#">Ejercicio 2</a></li>
-                                <li>
-                                    <hr class="dropdown-divider" />
-                                <li><a class="dropdown-item" href="#">Ejercicio 3</a></li>
-                                <li>
-                                    <hr class="dropdown-divider" />
-                                <li><a class="dropdown-item" href="#">Ejercicio 4</a></li>
-                                <li>
-                                    <hr class="dropdown-divider" />
-                                <li><a class="dropdown-item" href="#">Ejercicio 5</a></li>
-                                <li>
-                                    <hr class="dropdown-divider" />
-                                <li><a class="dropdown-item" href="#">Ejercicio 6</a></li>
-                                <li>
-                                    <hr class="dropdown-divider" />
-                                <li><a class="dropdown-item" href="#">Ejercicio 7</a></li>
-                                <hr class="dropdown-divider" />
-                            </ul>
                         <li class="nav-item">
-                            <a class="nav-link disabled">Disabled</a>
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <button class="btn btn-outline-success" type="submit">
-                            Search
-                        </button>
-                    </form>
                 </div>
             </div>
         </nav>
     </header>
-    <main>
-        <h1 class="bg-success text-center text-white py-4">Temporizador</h1>
-        <section class="container-fluid text-center my-4">
-            <button type="button" class="btn btn-success" onclick="start()">Iniciar</button>
-            <button type="button" class="btn btn-secondary" onclick="pause()">Pausar</button>
-            <button type="button" class="btn btn-dark" onclick="reset()">Resetear</button>
-
+    <main class="container-fluid">
+        <h1 class="text-center text-white py-4">Temporizador</h1>
+        <h2 class="text-center py-5 my-4">timer</h2>
+        <section class="text-center my-4">
+            <button type="button" class="btn btn-verde text-white fs-1 fw-bold m-3" id="iniciar" onclick="Start()"><i class="bi bi-play"></i></button>
+            <button type="button" class="btn btn-secondary text-white fs-1 fw-bold m-3" id="resetear" onclick="Reset()"><i class="bi bi-arrow-counterclockwise"></i></button>
+            <button type="button" class="btn btn-dark text-white fs-1 fw-bold m-3" id="parar" onclick="Stop()"><i class="bi bi-x"></i></button>
         </section>
 
     </main>
