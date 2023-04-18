@@ -18,7 +18,7 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 py-3">
             <div class="container-fluid px-2">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="#">TP5 ADP</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTP5"
                     aria-controls="navbarTP5" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -35,11 +35,25 @@
     </header>
     <main class="container-fluid">
         <h1 class="text-center text-white py-4">Temporizador</h1>
-        <h2 class="text-center py-5 my-4">timer</h2>
-        <section class="text-center my-4">
-            <button type="button" class="btn btn-verde text-white fs-1 fw-bold m-3" id="iniciar" onclick="Start()"><i class="bi bi-play"></i></button>
-            <button type="button" class="btn btn-secondary text-white fs-1 fw-bold m-3" id="resetear" onclick="Reset()"><i class="bi bi-arrow-counterclockwise"></i></button>
-            <button type="button" class="btn btn-dark text-white fs-1 fw-bold m-3" id="parar" onclick="Stop()"><i class="bi bi-x"></i></button>
+        <section class="text-center my-4 row">
+            <article class="container-fluid text-center my-4 bg-dark text-light p-2 container">
+                <p class="text-center py-5 my-4">Ingrese un tiempo</p>
+                <form class="d-flex my-4 container justify-content-center col-6" role="button">
+                    <input 
+                    type="number"
+                    id="userGuess"
+                    class="form-control me-2"
+                    placeholder="00:00"
+                    aria-label="input"
+                    required>
+                    <button type="submit" class="btn btn-light col-6" onclick="send()">Enviar</button>
+                </form>
+            </article>
+            <article>
+                <button type="button" class="btn btn-verde text-white fs-1 fw-bold m-3" id="iniciar" onclick="Start()"><i class="bi bi-play"></i></button>
+                <button type="button" class="btn btn-dark text-white fs-1 fw-bold m-3" id="pausar" onclick="Stop()"><i class="bi bi-pause"></i></button>
+                <button type="button" class="btn btn-secondary text-white fs-1 fw-bold m-3" id="resetear" onclick="Reset()"><i class="bi bi-arrow-counterclockwise"></i></button>
+            </article>
         </section>
 
     </main>
