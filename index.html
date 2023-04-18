@@ -36,8 +36,8 @@
     <main class="container-fluid">
         <h1 class="text-center text-white py-4">Temporizador</h1>
         <section class="text-center my-4 row">
-            <article class="container-fluid text-center my-4 bg-dark text-light p-2 container">
-                <p class="text-center py-5 my-4">Ingrese un tiempo</p>
+            <article class="container-fluid text-center my-4 text-light p-2 container">
+                <p class="container text-center py-2 my-4">Ingrese un tiempo</p>
                 <form class="d-flex my-4 container justify-content-center col-6" role="button">
                     <input 
                     type="number"
@@ -48,6 +48,7 @@
                     required>
                     <button type="submit" class="btn btn-light col-6" onclick="send()">Enviar</button>
                 </form>
+                <p class="container text-center py-3 my-4">display timer</p>
             </article>
             <article>
                 <button type="button" class="btn btn-verde text-white fs-1 fw-bold m-3" id="iniciar" onclick="Start()"><i class="bi bi-play"></i></button>
