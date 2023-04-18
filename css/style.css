@@ -9,13 +9,14 @@ body{
 
 main{
     flex-grow: 1;
+    background-color: black;
 }
 h1{
     background-color:  #16A085;
 }
-p{
-    background-color: black;
-    color: white;
+section p{
+    background-color:  #16A085;
+    color: black;
     font-family: rajdhani, sans-serif;
 }
 .btn-verde{

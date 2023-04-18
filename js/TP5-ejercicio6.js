@@ -4,32 +4,46 @@
 
 */
 
-let input = [];
+let timeInput = [];
+let timer = document.getElementById("timer");
+let pausa = true;
 let form = document.querySelector("form");
 
 form.addEventListener("submit", obtenerDato)
 
 function obtenerDato(e){
     e.preventDefault();
-    let input = parseInt(document.querySelector("input")).valueOf;
+    let timeInput = parseInt(document.querySelector("input")).valueOf;
     
     console.log(input.valueOf);
     send();
 }
 let time = input.addEventListener(change,)
 
-function timer(){
-    if (input === 0 || input > 0){
-        input--;
+// function timer(){
+//     if (input === 0 || input > 0){
+//         input--;
+//     }
+
+function start(){
+    if (pausa){
+        countdownTimer = setInterval(mostrar, 1000);
+    pausa = false;
     }
+    }
+function pause(){
+    clearInterval(timer);
+    pausa = true;
 }
-function send(){
-    document.getElementById("timer").innerHTML(`${timer}`)
+
+function reset(){ 
+    clearInterval(timer);
+    pausa = true;
+hrs = 0;
+min = 0;
+sec = 0;
+document.getElementById("resetear").innerHTML = ``;
 }
-// reset.onclick = function() {
-    //     h1.textContent = "00:00:00";
-    //     seconds = 0; minutes = 0; hours = 0;
-    // }
     
     // for(let contador=timer; contador >0; contador--)
 
