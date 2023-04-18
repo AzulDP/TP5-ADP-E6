@@ -14,16 +14,14 @@ form.addEventListener("submit", obtenerDato)
 function obtenerDato(e){
     e.preventDefault();
     let timeInput = parseInt(document.querySelector("input")).valueOf;
-    
-    console.log(input.valueOf);
-    send();
+    console.log(timeInput);
+    timer();
 }
-let time = input.addEventListener(change,)
 
-// function timer(){
-//     if (input === 0 || input > 0){
-//         input--;
-//     }
+
+function timer(){
+   timeInput 
+    }
 
 function start(){
     if (pausa){
@@ -45,6 +43,5 @@ sec = 0;
 document.getElementById("resetear").innerHTML = ``;
 }
     
-    // for(let contador=timer; contador >0; contador--)
 
 const idInterval = setInterval(timer, -1000);
